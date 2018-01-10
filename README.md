@@ -24,13 +24,13 @@ script created by M0B
 - shell finderf
 - ip scanner and brute force
 - auto detect cms and exploit
--##Please don't change anything in script settings
+## Please don't change anything in script settings
 
 
 # BING DORK SCANNER
 ![screenshot from 2018-01-10 21-53-27](https://user-images.githubusercontent.com/33225846/34794968-bda044b4-f650-11e7-8a16-221403dcfa17.png)
 
-###WHEN THE SCAN END , your gonna find all urls in /result
+### WHEN THE SCAN END , your gonna find all urls in /result
 
 # DORK BY COUNTRY
 - you put a dork
@@ -72,5 +72,8 @@ it's need more work , you can find some bugs
 
 # AUTO DETECT CMS AND EXPLOIT
 ![exp](https://user-images.githubusercontent.com/33225846/34796059-a54488ae-f654-11e7-91a2-d6f9d4b5f6b2.png)
-#####WARNING:
+##### WARNING:
 if you want to exploit drupal (add admin you need to upload drupal.php in your localhost or upload it in your shell and edit it in the script)
+
+# THANKS
+thanks for gassrini and G33K <3 <3
