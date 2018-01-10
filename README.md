@@ -1,7 +1,7 @@
 # M0B-tool
 
 M0B-tool
-. perl MENU.pl
+- perl MENU.pl
 
 # install
 git clone https://github.com/mobrine-mob/M0B-tool.git
