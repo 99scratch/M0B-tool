@@ -21,7 +21,7 @@ script created by M0B
 - bing dork scanner by domain
 - dork by country
 - BRUTE FORCE [WordPress (auto scrap name) - Joomla - Drupal - Opencart - Magento]
-- shell finderf
+- shell finder
 - ip scanner and brute force
 - auto detect cms and exploit
 ## Please don't change anything in script settings
