@@ -66,7 +66,10 @@ script created by M0B
 
 
 # IP SCANNER & brute force for ssh , ftp and the prevent brute force
+it's need more work , you can find some bugs
+
 
 # AUTO DETECT CMS AND EXPLOIT
 ![exp](https://user-images.githubusercontent.com/33225846/34796059-a54488ae-f654-11e7-91a2-d6f9d4b5f6b2.png)
-
+#####WARNING:
+if you want to exploit drupal (add admin you need to upload drupal.php in your localhost or upload it in your shell and edit it in the script)
