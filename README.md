@@ -75,5 +75,15 @@ it's need more work , you can find some bugs
 ##### WARNING:
 if you want to exploit drupal (add admin you need to upload drupal.php in your localhost or upload it in your shell and edit it in the script)
 
+# Updates
+- lookseek search engine added!
+
+
+
+
+
+
+
+
 # THANKS
 thanks for gassrini and G33K <3 <3
