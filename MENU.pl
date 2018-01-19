@@ -151,7 +151,9 @@ print colored("$are[rand @are]",'blue');
 print color("bold yellow"),"\nIf you found some scripting troubles, contact me : mobrinehayde5\@gmail.com\n\n";
 print colored("[+]Warning : THIS TOOL IS FOR EDUCATIONNAL PURPOSE ONLY,\n   USING IT TO INFECT SERVERS IS NOT MY RESPONSABILITY.\n",'white on_red');
 print color 'reset';
-print colored("\n[1]-BING DORK SCANNER\n[2]-DORK BY COUNTRY\n[3]-BRUTE FORCE\n[4]-SHELL FINDER\n[5]-IP SCANNER FULL\n[6]-AUTO IP SCANNER + BRUTE FORCE\n[7]-AUTO DETECT CMS & EXPLOIT\nSELECT :",'black on_yellow');
+print colored("\n[1]-BING DORK SCANNER\n[2]-LOOKSEEK DORK SCANNER [test þ]\n[3]-DORK BY COUNTRY\n[4]-BRUTE FORCE\n[5]-SHELL FINDER\n[6]-IP SCANNER FULL\n[7]-AUTO IP SCANNER + BRUTE FORCE\n[8]-AUTO DETECT CMS & EXPLOIT\n",'black on_yellow');
+print color 'reset';
+print("SELECT :");
 print color 'reset';
 
 my $sama = <STDIN>;
@@ -161,21 +163,24 @@ if($sama eq '1'){
 bing();
 }
 if($sama eq '2'){
-dork();
+lookseek();
 }
 if($sama eq '3'){
-redirect();
+dork();
 }
 if($sama eq '4'){
-shellfinder();
+redirect();
 }
 if($sama eq '5'){
-ip();
+shellfinder();
 }
 if($sama eq '6'){
-ipbr();
+ip();
 }
 if($sama eq '7'){
+ipbr();
+}
+if($sama eq '8'){
 bot();
 }
 ########### bing search
@@ -508,6 +513,409 @@ open(savea, '>>result/all.txt');
 }
 }
 }
+########### lookseek search
+sub lookseek(){
+    print color('reset');
+if ($^O =~ /MSWin32/) {system("cls"); }else { system("clear"); }
+
+print $oni[rand @oni];
+print colored("$are[rand @are]",'blue');
+    print color('bold red');
+
+print $oni;
+
+    print color('reset');
+
+    print color('bold white');
+    print color('reset');
+print color("bold Green"), "M0B Scanner V1\n";
+print color 'reset';
+print color("bold yellow"),"IF you found some problems contact me : mobrinehayde5@ gmail.com\n\n";
+print color 'reset';
+print colored("PLEASE REMEMBER IN THIS ENGINE YOU NEED TO PUT NON-SEPARETED DORK ex:details.php?BookID=\n",'white on_red');
+print color("bold white"),"SELECT: \n1-SCAN BY COUNTRY   ";
+print colored("slow\n",'white on_red');
+print color("bold white"),"2-SCAN GOV WEBSITES ";
+print colored("slow\n",'white on_yellow');
+print color("bold white"),"3-RANDOM?           ";
+print colored("fast\n",'white on_green');
+print color 'reset';
+
+my $sama = <STDIN>;
+chomp $sama;
+
+if($sama eq '1'){
+country();
+}
+if($sama eq '2'){
+gov();
+}
+
+if($sama eq '3'){
+random();
+}
+
+sub country(){
+system('cls');
+use IO::Select;
+use HTTP::Response;
+use HTTP::Request::Common qw(GET);
+use URI::URL;
+use IO::Socket::INET;
+use Term::ANSIColor qw(:constants);
+use MIME::Base64;
+use LWP;
+use HTTP::Cookies;
+use HTML::Entities;
+use URI::Escape;
+use Term::ANSIColor;
+use LWP::UserAgent;
+use HTTP::Request;
+use HTTP::Request::Common qw(POST);
+use LWP::UserAgent;
+use HTTP::Request::Common;
+use Term::ANSIColor;
+use HTTP::Request::Common qw(GET);
+$ag = LWP::UserAgent->new();
+use MIME::Base64;
+
+
+    print color('reset');
+if ($^O =~ /MSWin32/) {system("cls"); }else { system("clear"); }
+
+print $oni[rand @oni];
+print colored("$are[rand @are]",'blue');
+
+    print color('bold red');
+{
+print $oni;
+
+    print color('reset');
+
+print "[FUCK THE WORLD]\n";
+print "Dork:";
+$dor=<STDIN>;
+chomp($dor);
+$dor=~s/ /+/g;
+
+@country= ('ac', 'ad', 'ae', 'af', 'ag', 'ai', 'al', 'am', 'an', 'ao',
+           'aq', 'ar', 'as', 'at', 'au', 'aw', 'ax', 'az', 'ba', 'bb',
+           'bd', 'be', 'bf', 'bg', 'bh', 'bi', 'bj', 'bm', 'bn', 'bo',
+           'br', 'bs', 'bt', 'bv', 'bw', 'by', 'bz', 'ca', 'cc', 'cd',
+           'cf', 'cg', 'ch', 'ci', 'ck', 'cl', 'cm', 'cn', 'co', 'cr',
+           'cu', 'cv', 'cx', 'cy', 'cz', 'de', 'dj', 'dk', 'dm', 'do',
+           'dz', 'ec', 'ee', 'eg', 'eh', 'er', 'es', 'et', 'eu', 'fi',
+           'fj', 'fk', 'fm', 'fo', 'fr', 'ga', 'gb', 'gd', 'ge', 'gf',
+           'gg', 'gh', 'gi', 'gl', 'gm', 'gn', 'gp', 'gq', 'gr', 'gs',
+           'gt', 'gu', 'gw', 'gy', 'hk', 'hm', 'hn', 'hr', 'ht', 'hu',
+           'id', 'ie', 'il', 'im', 'in', 'io', 'iq', 'ir', 'is', 'it',
+           'je', 'jm', 'jo', 'jp', 'ke', 'kg', 'kh', 'ki', 'km', 'kn',
+           'kp', 'kr', 'kw', 'ky', 'kz', 'la', 'lb', 'lc', 'li', 'lk',
+           'lr', 'ls', 'lt', 'lu', 'lv', 'ly', 'ma', 'mc', 'md', 'me',
+           'mg', 'mh', 'mk', 'ml', 'mm', 'mn', 'mo', 'mp', 'mq', 'mr',
+           'ms', 'mt', 'mu', 'mv', 'mw', 'mx', 'my', 'mz', 'na', 'nc',
+           'ne', 'nf', 'ng', 'ni', 'nl', 'no', 'np', 'nr', 'nu', 'nz',
+           'om', 'pa', 'pe', 'pf', 'pg', 'ph', 'pk', 'pl', 'pm', 'pn',
+           'pr', 'ps', 'pt', 'pw', 'py', 'qa', 're', 'ro', 'rs', 'ru',
+           'rw', 'sa', 'sb', 'sc', 'sd', 'se', 'sg', 'sh', 'si', 'sj',
+           'sk', 'sl', 'sm', 'sn', 'so', 'sr', 'st', 'su', 'sv', 'sy',
+           'sz', 'tc', 'td', 'tf', 'tg', 'th', 'tj', 'tk', 'tl', 'tm',
+           'tn', 'to', 'tp', 'tr', 'tt', 'tv', 'tw', 'tz', 'ua', 'ug',
+           'uk', 'um', 'us', 'uy', 'uz', 'va', 'vc', 've', 'vg', 'vi',
+           'vn', 'vu', 'wf', 'ws', 'ye', 'yt', 'za', 'zm', 'zw');
+
+OUTER: foreach $country(@country){
+chomp $country;
+$dork="$dor+site:$country";
+print color("yellow"),"[Country : ";
+print color('reset');
+print color("white"),"$country]\n";
+print color('reset');
+gassone();
+}
+}
+
+sub gassone(){
+for ($ii = 1; $ii <= 2000; $ii+=10){
+
+$url = "http://search.lookseek.com/searchls.php?q=$dork&start=$ii&af=";
+$resp = $ag->request(HTTP::Request->new(GET => $url));
+$rrs = $resp->content;
+
+while($rrs =~ m/<a href=\"?http:\/\/(.*?)\//g){
+
+
+
+$link = $1;
+  if ( $link !~ /overture|msn|live|bing|yahoo|duckduckgo|google|yahoo|microsof|lookseek/)
+  {
+        if ($link !~ /^http:/)
+       {
+        $link = 'http://' . "$link" . '/';
+       }
+
+
+
+if($link !~ /\"|\?|\=|<|>|index\.php/){
+          if  (!  grep (/$link/,@result))
+          {
+print "$link\n";
+open(savea, '>>result/lookseek.txt');
+    print savea "$link\n";
+    close(savea);
+  
+
+            push(@result,$link);
+}
+}
+}
+}
+}
+}
+
+
+sub gov(){
+system('cls');
+use IO::Select;
+use HTTP::Response;
+use HTTP::Request::Common qw(GET);
+use URI::URL;
+use IO::Socket::INET;
+use Term::ANSIColor qw(:constants);
+use MIME::Base64;
+use LWP;
+use HTTP::Cookies;
+use HTML::Entities;
+use URI::Escape;
+use Term::ANSIColor;
+use LWP::UserAgent;
+use HTTP::Request;
+use HTTP::Request::Common qw(POST);
+use LWP::UserAgent;
+use HTTP::Request::Common;
+use Term::ANSIColor;
+use HTTP::Request::Common qw(GET);
+$ag = LWP::UserAgent->new();
+use MIME::Base64;
+
+
+    print color('reset');
+if ($^O =~ /MSWin32/) {system("cls"); }else { system("clear"); }
+
+print $oni[rand @oni];
+print colored("$are[rand @are]",'blue');
+
+    print color('bold red');
+{
+print $oni;
+
+    print color('reset');
+
+print "[FUCK THE WORLD]\n";
+print "Dork:";
+$dor=<STDIN>;
+chomp($dor);
+$dor=~s/ /+/g;
+
+@country= ('gov', 'gov.ac', 'gov.ad', 'gov.ae', 'gov.af', 'gov.ag', 'gov.ai', 'gov.al', 'gov.am', 'gov.an', 'gov.ao',
+           'gov.aq', 'gov.ar', 'gov.as', 'gov.at', 'gov.au', 'gov.aw', 'gov.ax', 'gov.az', 'gov.ba', 'gov.bb',
+           'gov.bd', 'gov.be', 'gov.bf', 'gov.bg', 'gov.bh', 'gov.bi', 'gov.bj', 'gov.bm', 'gov.bn', 'gov.bo',
+           'gov.br', 'gov.bs', 'gov.bt', 'gov.bv', 'gov.bw', 'gov.by', 'gov.bz', 'gov.ca', 'gov.cc', 'gov.cd',
+           'gov.cf', 'gov.cg', 'gov.ch', 'gov.ci', 'gov.ck', 'gov.cl', 'gov.cm', 'gov.cn', 'gov.co', 'gov.cr',
+           'gov.cu', 'gov.cv', 'gov.cx', 'gov.cy', 'gov.cz', 'gov.de', 'gov.dj', 'gov.dk', 'gov.dm', 'gov.do',
+           'gov.dz', 'gov.ec', 'gov.ee', 'gov.eg', 'gov.eh', 'gov.er', 'gov.es', 'gov.et', 'gov.eu', 'gov.fi',
+           'gov.fj', 'gov.fk', 'gov.fm', 'gov.fo', 'gov.fr', 'gov.ga', 'gov.gb', 'gov.gd', 'gov.ge', 'gov.gf',
+           'gov.gg', 'gov.gh', 'gov.gi', 'gov.gl', 'gov.gm', 'gov.gn', 'gov.gp', 'gov.gq', 'gov.gr', 'gov.gs',
+           'gov.gt', 'gov.gu', 'gov.gw', 'gov.gy', 'gov.hk', 'gov.hm', 'gov.hn', 'gov.hr', 'gov.ht', 'gov.hu',
+           'gov.id', 'gov.ie', 'gov.il', 'gov.im', 'gov.in', 'gov.io', 'gov.iq', 'gov.ir', 'gov.is', 'gov.it',
+           'gov.je', 'gov.jm', 'gov.jo', 'gov.jp', 'gov.ke', 'gov.kg', 'gov.kh', 'gov.ki', 'gov.km', 'gov.kn',
+           'gov.kp', 'gov.kr', 'gov.kw', 'gov.ky', 'gov.kz', 'gov.la', 'gov.lb', 'gov.lc', 'gov.li', 'gov.lk',
+           'gov.lr', 'gov.ls', 'gov.lt', 'gov.lu', 'gov.lv', 'gov.ly', 'gov.ma', 'gov.mc', 'gov.md', 'gov.me',
+           'gov.mg', 'gov.mh', 'gov.mk', 'gov.ml', 'gov.mm', 'gov.mn', 'gov.mo', 'gov.mp', 'gov.mq', 'gov.mr',
+           'gov.ms', 'gov.mt', 'gov.mu', 'gov.mv', 'gov.mw', 'gov.mx', 'gov.my', 'gov.mz', 'gov.na', 'gov.nc',
+           'gov.ne', 'gov.nf', 'gov.ng', 'gov.ni', 'gov.nl', 'gov.no', 'gov.np', 'gov.nr', 'gov.nu', 'gov.nz',
+           'gov.om', 'gov.pa', 'gov.pe', 'gov.pf', 'gov.pg', 'gov.ph', 'gov.pk', 'gov.pl', 'gov.pm', 'gov.pn',
+           'gov.pr', 'gov.ps', 'gov.pt', 'gov.pw', 'gov.py', 'gov.qa', 'gov.re', 'gov.ro', 'gov.rs', 'gov.ru',
+           'gov.rw', 'gov.sa', 'gov.sb', 'gov.sc', 'gov.sd', 'gov.se', 'gov.sg', 'gov.sh', 'gov.si', 'gov.sj',
+           'gov.sk', 'gov.sl', 'gov.sm', 'gov.sn', 'gov.so', 'gov.sr', 'gov.st', 'gov.su', 'gov.sv', 'gov.sy',
+           'gov.sz', 'gov.tc', 'gov.td', 'gov.tf', 'gov.tg', 'gov.th', 'gov.tj', 'gov.tk', 'gov.tl', 'gov.tm',
+           'gov.tn', 'gov.to', 'gov.tp', 'gov.tr', 'gov.tt', 'gov.tv', 'gov.tw', 'gov.tz', 'gov.ua', 'gov.ug',
+           'gov.uk', 'gov.um', 'gov.us', 'gov.uy', 'gov.uz', 'gov.va', 'gov.vc', 'gov.ve', 'gov.vg', 'gov.vi',
+           'gov.vn', 'gov.vu', 'gov.wf', 'gov.ws', 'gov.ye', 'gov.yt', 'gov.za', 'gov.zm', 'gov.zw',
+'edu', 'edu.ac', 'edu.ad', 'edu.ae', 'edu.af', 'edu.ag', 'edu.ai', 'edu.al', 'edu.am', 'edu.an', 'edu.ao',
+           'edu.aq', 'edu.ar', 'edu.as', 'edu.at', 'edu.au', 'edu.aw', 'edu.ax', 'edu.az', 'edu.ba', 'edu.bb',
+           'edu.bd', 'edu.be', 'edu.bf', 'edu.bg', 'edu.bh', 'edu.bi', 'edu.bj', 'edu.bm', 'edu.bn', 'edu.bo',
+           'edu.br', 'edu.bs', 'edu.bt', 'edu.bv', 'edu.bw', 'edu.by', 'edu.bz', 'edu.ca', 'edu.cc', 'edu.cd',
+           'edu.cf', 'edu.cg', 'edu.ch', 'edu.ci', 'edu.ck', 'edu.cl', 'edu.cm', 'edu.cn', 'edu.co', 'edu.cr',
+           'edu.cu', 'edu.cv', 'edu.cx', 'edu.cy', 'edu.cz', 'edu.de', 'edu.dj', 'edu.dk', 'edu.dm', 'edu.do',
+           'edu.dz', 'edu.ec', 'edu.ee', 'edu.eg', 'edu.eh', 'edu.er', 'edu.es', 'edu.et', 'edu.eu', 'edu.fi',
+           'edu.fj', 'edu.fk', 'edu.fm', 'edu.fo', 'edu.fr', 'edu.ga', 'edu.gb', 'edu.gd', 'edu.ge', 'edu.gf',
+           'edu.gg', 'edu.gh', 'edu.gi', 'edu.gl', 'edu.gm', 'edu.gn', 'edu.gp', 'edu.gq', 'edu.gr', 'edu.gs',
+           'edu.gt', 'edu.gu', 'edu.gw', 'edu.gy', 'edu.hk', 'edu.hm', 'edu.hn', 'edu.hr', 'edu.ht', 'edu.hu',
+           'edu.id', 'edu.ie', 'edu.il', 'edu.im', 'edu.in', 'edu.io', 'edu.iq', 'edu.ir', 'edu.is', 'edu.it',
+           'edu.je', 'edu.jm', 'edu.jo', 'edu.jp', 'edu.ke', 'edu.kg', 'edu.kh', 'edu.ki', 'edu.km', 'edu.kn',
+           'edu.kp', 'edu.kr', 'edu.kw', 'edu.ky', 'edu.kz', 'edu.la', 'edu.lb', 'edu.lc', 'edu.li', 'edu.lk',
+           'edu.lr', 'edu.ls', 'edu.lt', 'edu.lu', 'edu.lv', 'edu.ly', 'edu.ma', 'edu.mc', 'edu.md', 'edu.me',
+           'edu.mg', 'edu.mh', 'edu.mk', 'edu.ml', 'edu.mm', 'edu.mn', 'edu.mo', 'edu.mp', 'edu.mq', 'edu.mr',
+           'edu.ms', 'edu.mt', 'edu.mu', 'edu.mv', 'edu.mw', 'edu.mx', 'edu.my', 'edu.mz', 'edu.na', 'edu.nc',
+           'edu.ne', 'edu.nf', 'edu.ng', 'edu.ni', 'edu.nl', 'edu.no', 'edu.np', 'edu.nr', 'edu.nu', 'edu.nz',
+           'edu.om', 'edu.pa', 'edu.pe', 'edu.pf', 'edu.pg', 'edu.ph', 'edu.pk', 'edu.pl', 'edu.pm', 'edu.pn',
+           'edu.pr', 'edu.ps', 'edu.pt', 'edu.pw', 'edu.py', 'edu.qa', 'edu.re', 'edu.ro', 'edu.rs', 'edu.ru',
+           'edu.rw', 'edu.sa', 'edu.sb', 'edu.sc', 'edu.sd', 'edu.se', 'edu.sg', 'edu.sh', 'edu.si', 'edu.sj',
+           'edu.sk', 'edu.sl', 'edu.sm', 'edu.sn', 'edu.so', 'edu.sr', 'edu.st', 'edu.su', 'edu.sv', 'edu.sy',
+           'edu.sz', 'edu.tc', 'edu.td', 'edu.tf', 'edu.tg', 'edu.th', 'edu.tj', 'edu.tk', 'edu.tl', 'edu.tm',
+           'edu.tn', 'edu.to', 'edu.tp', 'edu.tr', 'edu.tt', 'edu.tv', 'edu.tw', 'edu.tz', 'edu.ua', 'edu.ug',
+           'edu.uk', 'edu.um', 'edu.us', 'edu.uy', 'edu.uz', 'edu.va', 'edu.vc', 'edu.ve', 'edu.vg', 'edu.vi',
+           'edu.vn', 'edu.vu', 'edu.wf', 'edu.ws', 'edu.ye', 'edu.yt', 'edu.za', 'edu.zm', 'edu.zw');
+
+OUTER: foreach $country(@country){
+chomp $country;
+$dork="$dor+site:$country";
+print color("yellow"),"[Country : ";
+print color('reset');
+print color("white"),"$country]\n";
+print color('reset');
+gassone();
+}
+}
+
+sub gassone(){
+for ($ii = 1; $ii <= 2000; $ii+=10){
+
+$url = "http://search.lookseek.com/searchls.php?q=$dork&start=$ii&af=";
+$resp = $ag->request(HTTP::Request->new(GET => $url));
+$rrs = $resp->content;
+
+while($rrs =~ m/<a href=\"?http:\/\/(.*?)\//g){
+
+
+
+$link = $1;
+  if ( $link !~ /overture|msn|live|bing|yahoo|duckduckgo|google|yahoo|microsof|lookseek/)
+  {
+        if ($link !~ /^http:/)
+       {
+        $link = 'http://' . "$link" . '/';
+       }
+
+
+
+if($link !~ /\"|\?|\=|<|>|index\.php/){
+          if  (!  grep (/$link/,@result))
+          {
+print "$link\n";
+open(savea, '>>result/lookseek.txt');
+    print savea "$link\n";
+    close(savea);
+  
+
+            push(@result,$link);
+}
+}
+}
+}
+}
+}
+
+
+sub random(){
+system('cls');
+use IO::Select;
+use HTTP::Response;
+use HTTP::Request::Common qw(GET);
+use URI::URL;
+use IO::Socket::INET;
+use Term::ANSIColor qw(:constants);
+use MIME::Base64;
+use LWP;
+use HTTP::Cookies;
+use HTML::Entities;
+use URI::Escape;
+use Term::ANSIColor;
+use LWP::UserAgent;
+use HTTP::Request;
+use HTTP::Request::Common qw(POST);
+use LWP::UserAgent;
+use HTTP::Request::Common;
+use Term::ANSIColor;
+use HTTP::Request::Common qw(GET);
+$ag = LWP::UserAgent->new();
+use MIME::Base64;
+
+
+    print color('reset');
+if ($^O =~ /MSWin32/) {system("cls"); }else { system("clear"); }
+
+print $oni[rand @oni];
+print colored("$are[rand @are]",'blue');
+
+    print color('bold red');
+{
+print $oni;
+
+    print color('reset');
+
+print "[FUCK THE WORLD]\n";
+print "Dork:";
+$dor=<STDIN>;
+chomp($dor);
+$dor=~s/ /+/g;
+
+@country= ("com","co","net","org","club","design","shop","site","online","io","me","us","ca","ac","academy","accountant","accountants","actor","adult","ae.org","ae","af","africa","ag","agency","am","apartments","com.ar","ar","archi","art","as","asia","associates","at","attorney","au","com.au","id.au","net.au","org.au","auction","band","bar","bargains","bayern","be","beer","berlin","best","bet","bid","bike","bingo","bio","biz","black","blog","blue","boutique","br","br.com","brussels","build","builders","business","buzz","bz","cab","cafe","caf","cam","camera","camp","capetown","capital","cards","care","career","careers","casa","cash","casino","catering","cc","center","ch","chat","cheap","church","city","cl","claims","cleaning","click","clinic","clothing","cloud","cm","cn.com","cn","uk","co.uk","coach","codes","coffee","college","cologne","community","company","computer","condos","construction","consulting","contractors","cooking","cool","country","coupons","courses","credit","cricket","cruises","cx","cz","dance","date","dating","de","deals","degree","delivery","democrat","dental","dentist","diamonds","digital","direct","directory","discount","dk","doctor","dog","domains","download","durban","earth","ec","eco","education","email","energy","engineer","engineering","enterprises","equipment","es","estate","eu","eu.com","events","exchange","expert","exposed","express","fail","faith","family","fans","farm","fashion","finance","financial","fish","fishing","fit","fitness","flights","florist","fm","football","forsale","foundation","fr","fun","fund","furniture","futbol","fyi","gallery","games","garden","gd","gg","gift","gifts","gives","gl","glass","global","gold","golf","gr","graphics","gratis","green","gripe","group","gs","guide","guru","gy","hamburg","haus","health","healthcare","help","hn","hockey","holdings","holiday","horse","hospital","host","house","how","ht","im","immo","immobilien","in","industries","info","ink","institude","insure","international","investments","is","it","je","jetzt","jewelry","joburg","jp","jpn.com","kaufen","kim","kitchen","kiwi","koeln","kyoto","la","land","lat","lawyer","lc","lease","legal","lgbt","li","life","lighting","limited","limo","link","live","loan","loans","lol","london","love","lt","ltd","lu","lv","maison","management","market","marketing","mba","media","melbourne","memorial","men","menu","miami","mn","mobi","moda","moe","mom","money","mortgage","ms","mu","mx","nagoya","name","network","news","ngo","ninja","nl","nu","nyc","nz","ac.nz","org.nz","kiwi.nz","net.nz","school.nz","gen.nz","geek.nz","co.nz","maori.nz","okinawa","one","onl","organic","osaka","paris","partners","parts","party","pe","pet","ph","photo","photography","photos","pics","pictures","pink","pizza","pl","place","plumbing","plus","pm","poker","porn","press","pro","productions","promo","properties","pt","pub","pw","qa","qpon","quebec","racing","re","recipes","red","rehab","reise","reisen","rent","rentals","repair","report","republican","rest","restaurant","review","reviews","rip","rocks","rodeo","ru","ru.com","run","ryukyu","sa.com","sa","sale","salon","sarl","sb","com.sb","sc","school","schule","science","scot","se","services","sexy","sg","com.sg","sh","shiksha","shoes","shopping","show","singles","ski","soccer","social","software","solar","solutions","soy","space","store","stream","studio","study","style","supplies","supply","support","surf","surgery","sx","sydney","systems","taipei","tattoo","tax","taxi","tc","team","tech","technology","tel","tennis","tf","theater","tienda","tips","tires","tk","tl","to","today","tokyo","tools","top","tours","town","toys","trade","trading","training","tube","tv","tw","tr","org.uk","me.uk","uk.com","university","uno","us.com","vacations","vc","vegas","ventures","vet","vg","viajes","video","villas","vin","vip","vision","vlaanderen","vodka","vote","voting","voyage","wales","wang","watch","webcam","website","wedding","wf","wien","wiki","win","wine","work","works","world","ws","wtf","在线","移动","ОРГ","中文网","机构","みんな","世界","游戏","企业","XYZ","YOGA","yokohama","yt","za","co.za","za.com","zone","ad","ai","al","an","ao","aq","aw","ax","az","ba","bb","bd","bf","bg","bh","bj","bl","bm","bn","bo","bq","bs","bt","bv","bw","by","bz","cd","cf","cg","ci","ck","cm","cr","cu","cv","cw","cx","cy","dj","dm","do","dz","ee","eg","eh","er","et","fi","fj","fk","fm","fo","ga","gb","gd","ge","gf","gg","gh","gi","gl","gm","gn","gp","gp","gs","gt","gu","gw","hk","hm","hr","ht","hu","id","ie","il","im","in","iq","ir","is","jm","jo","ke","kg","kh","ki","km","kn","kr","kw","ky","kz","lb","lk","lr","ls","lt","lv","ma","mc","md","mf","mg","mh","mk","ml","mm","mo","mp","mq","mr","mt","mu","mv","mw","my","mz","na","nc","ne","nf","ng","ni","no","np","nr","nu","om","pa","pf","pg","pk","pm","pn","pr","ps","pw","py","ro","rs","rw","sb","sc","sd","sh","si","sj","sk","sl","sm","sn","so","sr","ss","st","su","sv","sx","sy","sz","tc","td","tf","tg","th","tj","tm","tn","to","tt","tr","tz","ua","ug","um","uy","uz","va","vc","ve","vg","vi","vn","vu","wf","ws","ye","yt","zm","zw","blackfriday","alsace","amsterdam","bcn","barcelona","bayern","brussels","budapest","bzh","cat","cologne","corsica","cymru","eus","frl");
+
+OUTER: foreach $country(@country){
+chomp $country;
+$dork="$dor+site:$country";
+print color("yellow"),"[Country : ";
+print color('reset');
+print color("white"),"$country]\n";
+print color('reset');
+gassone();
+}
+}
+
+sub gassone(){
+for ($ii = 1; $ii <= 2000; $ii+=10){
+
+$url = "http://search.lookseek.com/searchls.php?q=$dork&start=$ii&af=";
+$resp = $ag->request(HTTP::Request->new(GET => $url));
+$rrs = $resp->content;
+
+while($rrs =~ m/<a href=\"?http:\/\/(.*?)\//g){
+
+
+
+$link = $1;
+  if ( $link !~ /overture|msn|live|bing|yahoo|duckduckgo|google|yahoo|microsof|lookseek/)
+  {
+        if ($link !~ /^http:/)
+       {
+        $link = 'http://' . "$link" . '/';
+       }
+
+
+
+if($link !~ /\"|\?|\=|<|>|index\.php/){
+          if  (!  grep (/$link/,@result))
+          {
+print "$link\n";
+open(savea, '>>result/lookseek.txt');
+    print savea "$link\n";
+    close(savea);
+  
+
+            push(@result,$link);
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+########### dork
 sub dork(){
 system ("cls");
 system ("dOcToR N!nja...");
@@ -663,7 +1071,7 @@ print $oni[rand @oni];
 print colored("$are[rand @are]",'blue');
 print "\n";
 print colored("+------------------------------------------------------------------------+",'red'),"\n";
-print colored("[+]shell finder created by M0B",'red'),"\n";
+print colored("[+]IP scanner and brute force created by M0B",'red'),"\n";
 print colored("[-]WARNING: I don't take any responsability to use this tool for bypass",'blue'),"\n";
 print colored("[-]WARNING: this is ip scanner tool + brute force",'blue'),"\n";
 print colored("+------------------------------------------------------------------------+",'red'),"\n";
