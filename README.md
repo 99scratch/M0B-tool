@@ -1,3 +1,10 @@
+# M0B-tool --> M0B-tool-v2
+During to many issues this tool is too bad
+
+if you want to see my new tool (remember it is under construction)
+
+If you wish help me to build M0B tool v2 good than the first one so all you need is to try it and find the issues :)
+
 # M0B-tool
 
 M0B-tool
