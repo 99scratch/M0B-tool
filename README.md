@@ -1,9 +1,9 @@
 # M0B-tool --> M0B-tool-v2
 During to many issues this tool is too bad
 
-if you want to see my new tool (remember it is under construction)
+if you wanna use powerfull tool you can use M0B-tool-v2
 
-If you wish help me to build M0B tool v2 good than the first one so all you need is to try it and find the issues :)
+it contains all M0B-tool tools updated & working too
 
 # M0B-tool
 
